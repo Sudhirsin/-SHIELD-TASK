@@ -99,6 +99,7 @@ function App() {
   };
 
   // Manual data fetch triggered by "Go" button
+  // This gives users control over when API calls are made
   const handleFetchData = useCallback(async () => {
     if (!selectedRange.start || !selectedRange.end) {
       console.warn('Please select a valid date range');
