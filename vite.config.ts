@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: true,
-    port: 5173,
+    port: 2222,
     allowedHosts: [
       "localhost",
       ".csb.app",
@@ -16,7 +16,7 @@ export default defineConfig({
   },
   preview: {
     host: true,
-    port: 5173,
+    port: 2222,
     allowedHosts: [
       "localhost",
       ".csb.app",
