@@ -51,7 +51,7 @@ npm install
 # Start development server
 npm run dev
 
-# Open browser to http://localhost:5173
+# Open browser to http://localhost:2222
 ```
 
 ## 📖 Usage Guide

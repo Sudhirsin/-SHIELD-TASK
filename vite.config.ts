@@ -6,22 +6,22 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: true,
-    port: 5173,
+    port: 2222,
     allowedHosts: [
       'localhost',
       '.csb.app',
       '.codesandbox.io',
-      'gjt4d6-5173.csb.app'
+      'gjt4d6-2222.csb.app'
     ]
   },
   preview: {
     host: true,
-    port: 5173,
+    port: 2222,
     allowedHosts: [
       'localhost',
       '.csb.app',
       '.codesandbox.io',
-      'gjt4d6-5173.csb.app'
+      'gjt4d6-2222.csb.app'
     ]
   }
 })
