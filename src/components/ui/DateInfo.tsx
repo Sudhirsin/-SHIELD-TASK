@@ -21,6 +21,7 @@ export const DateInfo: React.FC<DateInfoProps> = ({
   }
 
   // Check if selected dates are in 2024 (when DummyJSON products were created)
+  // This is important for showing the correct information to users
   const selectedYear = selectedRange.start.getFullYear();
   const isUsingRealDates = selectedYear === 2024;
 
