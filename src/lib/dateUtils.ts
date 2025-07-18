@@ -78,9 +78,10 @@ export const isDateDisabled = (date: Date, restrictionDays: number = 90): boolea
   const today = new Date();
 
   // Allow dates from 2024 onwards to see real DummyJSON product data
+  // This enables users to access actual product creation timestamps
   const minAllowedDate = new Date('2024-01-01');
 
-  // Allow dates up to 30 days in the future
+  // Allow dates up to 30 days in the future for reasonable business use
   const maxAllowedDate = addDays(today, 30);
 
   return isBefore(date, minAllowedDate) || isAfter(date, maxAllowedDate);
