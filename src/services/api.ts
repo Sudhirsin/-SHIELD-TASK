@@ -99,7 +99,8 @@ export const formatDateForApi = (date: Date, timezone: string): string => {
   return `${year}-${month}-${day} ${hours}:${minutes}:${seconds} ${offset}`;
 };
 
-// Fetch products from DummyJSON
+// Fetch products from DummyJSON API
+// Using limit parameter to control response size for better performance
 const fetchProducts = async (limit: number = 30): Promise<DummyJSONProduct[]> => {
   try {
     const response = await fetch(`https://dummyjson.com/products?limit=${limit}`);
